@@ -1,4 +1,4 @@
-# GFarm2-Aggregator-Adapter
+# Median-Adapter
 
 Clone this repo and cd into the project directory
 
@@ -65,16 +65,6 @@ or
 npm install
 ```
 
-### Setup Env variables
-
-Create a `.env` file in the project directory:
-
-```bash
-touch .env
-```
-
-Then copy the content from `.env.sample` into `.env`, replacing the placeholder values with your API keys.
-
 Natively run the application (defaults to port 8080):
 
 ### Run
@@ -98,11 +88,11 @@ curl --location --request POST 'http://localhost:8080' --header 'Accept: applica
 If you wish to use Docker to run the adapter, you can build the image by running the following command:
 
 ```bash
-docker build . -t gfarm2-aggregator-adapter
+docker build . -t median-adapter
 ```
 
 Then run it with:
 
 ```bash
-docker run -p 8080:8080 -it gfarm2-aggregator-adapter:latest
+docker run -p 8080:8080 -it median-adapter:latest
 ```
